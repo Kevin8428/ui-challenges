@@ -1,0 +1,79 @@
+.wrapper {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  left: 5px;
+  bottom: 5px;
+  background: linear-gradient(315deg, #F6E5D4, #CEAD89);
+  background: -moz-linear-gradient(315deg, #F6E5D4,#CEAD89);
+  background: -webkit-linear-gradient(315deg, #F6E5D4,#CEAD89);
+  background: -o-linear-gradient(315deg, #F6E5D4,#CEAD89);
+
+}
+.modalWindow {
+  opacity: 0;
+}
+.modalWindow:target {
+  opacity: 1;
+  transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  -webkit-transition: opacity 400ms ease-in;
+  -o-transition: opacity 400ms ease-in;
+}
+
+.modalWindow .modalContent {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  margin: 10% auto;
+  background: #FEFCFA;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.cancel, .reply {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60px;
+  color: #818994;
+  width: 49.8%;
+  height: 20%;
+  background: #F6E5D4;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, #F6E5D4 50%, #CEAD89 50%);
+  -webkit-transition: background-position 1s;
+  -moz-transition: background-position 1s;
+  transition: background-position 1s;
+}
+
+.cancel:hover, .reply:hover{
+  background-position: 0 100%;
+}
+
+.reply {
+  right: 0;
+  bottom: 0;
+  border-radius: 0px 0px 10px 0px;
+}
+
+.cancel {
+  left: 0;
+  bottom: 0;
+  border-radius: 0px 0px 0px 10px;
+}
+
+.sent-from {
+  color: rgba(172, 172, 172, 0.91);
+  margin: 2rem;
+}
+
+.message {
+  margin: 2rem;
+
+}
+
+a {
+  text-decoration: none;
+}

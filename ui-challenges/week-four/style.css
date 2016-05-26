@@ -1,0 +1,99 @@
+.wrapper {
+  position: fixed;
+  top:10%;
+  left:20%;
+  right:20%;
+  bottom:10%;
+  background: rgb(197, 231, 208);
+  overflow: hidden;
+}
+.image-container {
+  width: 55%;
+  height: 100%;
+  position: absolute;
+  background: black;
+  opacity: 0.8;
+}
+
+.image-container:before {
+  font-size: 11rem;
+  font-family: Georgia, serif;
+  font-style: normal;
+  content: "\201C";
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  opacity: 0.2;
+  z-index: 5;
+  color: white;
+}
+
+.image-container img{
+  opacity: 0.5;
+  width:100%;
+  display: inline-block;
+  height:100%;
+  vertical-align: middle;
+  left:-130px;
+  position: absolute;
+  z-index: 1;
+}
+
+.quote-container {
+  width: 80%;
+  height: 100%;
+  margin-left: 45%;
+  text-align: center;
+  float: right;
+  background: #19A0FF;
+  z-index: 2;
+  position: relative;
+}
+
+blockquote {
+  margin: 10% 7%;
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.quote-container p{
+  font-size: 55px;
+  color: white;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.quote-container footer{
+  color: white;
+  text-align: left;
+}
+
+.toggle-image {
+  color: white;
+  font-size: 40px;
+  opacity: 1;
+  z-index: 50;
+  position: absolute;
+  width: 80px;
+  display: inline-block;
+  bottom: 0;
+  margin-bottom: 20px;
+  margin-left: 11%;
+}
+
+.toggle-left {
+  float: left;
+}
+
+.toggle-right {
+  float: right;
+  padding-right: 20px;
+}
+.selected {
+  visibility: visible;
+}
+.img-hide {
+  visibility: hidden;
+}
