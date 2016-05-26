@@ -8,6 +8,7 @@ $.fn.extend({
         rightBtn = $('.toggle-right'),
         currentImage = 0;
 
+
     getPosition = function(x) {
       if(currentImage + x == -1){
         currentImage = 2;
@@ -20,8 +21,11 @@ $.fn.extend({
       }
     },
     render = function() {
-      var currentquote = allImages.eq(currentImage).data('quote');
-      $('p').html(currentquote);
+      var currentQuote = allImages.eq(currentImage).data('quote'),
+          currentQuoteSource = allImages.eq(currentImage).data('quote-source');
+
+      $('p').html(currentQuote);
+      $('footer').html(currentQuoteSource);
       allImages.removeClass('selected img-hide').addClass('img-hide').eq(currentImage).addClass('selected').removeClass('img-hide');
     },
     moveLeft = function() {
@@ -35,6 +39,7 @@ $.fn.extend({
     return $(this).each(function() {
       rightBtn.on('click', moveRight.bind(this));
       leftBtn.on('click', moveLeft.bind(this));
+      render();
     });
   }
 });
