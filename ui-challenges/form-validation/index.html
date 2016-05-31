@@ -13,62 +13,128 @@
       <div class="modal-links">
         <a href="#" id="modal-back">back</a><br>
         <a href="#personal-info-container" id="modal-personal-info">personal info</a><br>
-        <a href="#travel-info-container" id="modal-travel-info">travel info</a>
+        <a href="#travel-info-container" id="modal-travel-info">travel info</a><br>
+        <a href="#work-info-container" id="modal-work-info">work info</a>
       </div>
 
-      <div class="personal-info-container" id="personal-info-container">
-        <div class="personal-info-modal modal">
-          <form action="#" method="post" id="personal-info-form">
-            <div class="field-container grid-4">
-              <label for="age">First Name</label>
-              <input type="text" data-format="000" require="required" name="name" value="" id="age" data-invalid-msg="Enter valid age.">
-            </div>
-            <div class="field-container grid-4">
-              <label for="age">Last Name</label>
-              <input type="text" data-format="000" require="required" name="name" value="" id="age" data-invalid-msg="Enter valid age.">
-            </div>
-            <div class="field-container grid-4">
-              <label for="age">Address</label>
-              <input type="text" data-format="000" require="required" name="name" value="" id="age" data-invalid-msg="Enter valid age.">
-            </div>
-            <div class="field-container grid-4">
-              <label for="age">City</label>
-              <input type="text" data-format="000" require="required" name="name" value="" id="age" data-invalid-msg="Enter valid age.">
-            </div>
-            <div class="field-container grid-4">
-              <label for="age">State</label>
-              <input type="text" data-format="000" require="required" name="name" value="" id="age" data-invalid-msg="Enter valid age.">
-            </div>
-            <div class="field-container grid-4">
-              <label for="age">Age</label>
-              <input type="text" data-format="000" require="required" name="name" value="" id="age" data-invalid-msg="Enter valid age.">
-            </div>
-            <div class="select-container grid-4">
-              <select name="gender-select">
-                <option value="">Gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-              </select>
-            </div>
-            <div class="field-container grid-4">
-              <label for="age">Ethnicity</label>
-              <input type="text" data-format="000" require="required" name="name" value="" id="age" data-invalid-msg="Enter valid age.">
-            </div>
-          </form>
+
+      <div class="modal-wrapper">
+
+        <div class="personal-info-container">
+          <div class="personal-info-modal modal hide">
+            <form action="#" method="post" id="personal-info-form">
+              <div class="field-container grid-4">
+                <label for="age">First Name</label>
+                <input type="text" data-format="000" name="name" value="" id="first-name" data-invalid-msg="Enter valid age.">
+              </div>
+              <div class="field-container grid-4">
+                <label for="age">Last Name</label>
+                <input type="text" data-format="000" name="name" value="" id="last-name" data-invalid-msg="Enter valid age.">
+              </div>
+              <div class="field-container grid-4">
+                <label for="age">Address</label>
+                <input type="text" data-format="000" name="name" value="" id="address" data-invalid-msg="Enter valid age.">
+              </div>
+              <div class="field-container grid-4">
+                <label for="age">City</label>
+                <input type="text" data-format="000" name="name" value="" id="city" data-invalid-msg="Enter valid age.">
+              </div>
+              <div class="field-container grid-4">
+                <label for="age">State</label>
+                <input type="text" data-format="000" name="name" value="" id="state" data-invalid-msg="Enter valid age.">
+              </div>
+              <div class="field-container grid-4">
+                <label for="age">email</label>
+                <input type="text" data-format="000" name="name" value="" id="email" data-validate="email" data-invalid-msg="Enter valid age.">
+              </div>
+              <div class="select-container grid-4">
+                <select name="gender-select" id="gender">
+                  <option value="">Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+              <div class="field-container grid-4">
+                <label for="age">date</label>
+                <input type="text" data-format="000" name="name" value="" id="date" data-validate="date" data-invalid-msg="Enter valid age.">
+              </div>
+              <div class="field-container grid-4">
+                <button type="submit" name="name" value="Submit">Submit</button>
+              </div>
+              <a class="modal-close">x</a>
+            </form>
+          </div>
         </div>
-      </div>
 
-      <div class="travel-info-container" id="travel-info-container">
-        <div class="travel-info-modal modal">
+        <div class="travel-info-container">
+          <div class="travel-info-modal modal hide">
+            <form action="#" method="post" id="travel-info-form">
+              <div class="field-container grid-4">
+                <label for="age">City</label>
+                <input type="text" data-format="000" name="name" value="" id="age" data-validate="" data-invalid-msg="Enter valid age.">
+              </div>
+              <div class="field-container grid-4">
+                <label for="age">State</label>
+                <input type="text" data-format="000" name="name" value="" id="age" data-validate="" data-invalid-msg="Enter valid age.">
+              </div>
+              <div class="field-container grid-4">
+                <label for="age">Departing Date</label>
+                <input type="text" data-format="000" name="name" value="" id="age" data-validate="date" data-invalid-msg="Enter valid age.">
+              </div>
+              <div class="field-container grid-4">
+                <label for="age">City</label>
+                <input type="text" data-format="000" name="name" value="" id="age" data-validate="" data-invalid-msg="Enter valid age.">
+              </div>
+              <div class="field-container grid-4">
+                <label for="age">State</label>
+                <input type="text" data-format="000" name="name" value="" id="age" data-validate="" data-invalid-msg="Enter valid age.">
+              </div>
+              <div class="field-container grid-4">
+                <label for="age">Return Date</label>
+                <input type="text" data-format="000" name="name" value="" id="age" data-validate="date" data-invalid-msg="Enter valid age.">
+              </div>
+              <div class="field-container grid-4">
+                <button type="submit" name="name" value="Submit">Submit</button>
+              </div>
+              <a class="modal-close">x</a>
+            </form>
+          </div>
+        </div>
+
+        <div class="job-info-container">
+          <div class="job-info-modal modal hide">
+            <form action="#" method="post" id="job-info-form">
+              <div class="field-container grid-4">
+                <label for="age">Company</label>
+                <input type="text" data-format="000" name="name" value="" id="age" data-validate="" data-invalid-msg="Enter valid age.">
+              </div>
+              <div class="field-container grid-4">
+                <label for="age">Industry</label>
+                <input type="text" data-format="000" name="name" value="" id="age" data-validate="" data-invalid-msg="Enter valid age.">
+              </div>
+              <div class="field-container grid-4">
+                <label for="age">Title</label>
+                <input type="text" data-format="000" name="name" value="" id="age" data-validate="" data-invalid-msg="Enter valid age.">
+              </div>
+              <div class="field-container grid-4">
+                <label for="age">City</label>
+                <input type="text" data-format="000" name="name" value="" id="age" data-validate="" data-invalid-msg="Enter valid age.">
+              </div>
+              <div class="field-container grid-4">
+                <label for="age">State</label>
+                <input type="text" data-format="000" name="name" value="" id="age" data-validate="" data-invalid-msg="Enter valid age.">
+              </div>
+              <div class="field-container grid-4">
+                <button type="submit" name="name" value="Submit">Submit</button>
+              </div>
+              <a class="modal-close">x</a>
+            </form>
+          </div>
+        </div>
+
+        <div class="school-info">
 
         </div>
-      </div>
-
-      <div class="job-info">
-
-      </div>
-      <div class="school-info">
-
       </div>
     </div>
   </body>
