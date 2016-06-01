@@ -1,0 +1,39 @@
+img {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+}
+
+/*img:nth-of-type(2){
+  border: 2px solid blue;
+}*/
+
+.selected {
+  visibility: visible;
+  border: 2px solid red;
+}
+/*.img-hide {
+  visibility: hidden;
+}*/
+
+a {
+  width: 20px;
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.25);
+  height: 96%;
+  line-height: 13;
+}
+
+
+
+.carousel-container {
+  position: relative;
+  width: 1120px;
+  margin: 0 auto;
+  top: 100px;
+}
+
+.toggle-right {
+  right: 0;
+}
